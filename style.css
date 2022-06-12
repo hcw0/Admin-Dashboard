@@ -116,4 +116,7 @@ background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, F
 
 .main-content {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: .2fr;
 }
