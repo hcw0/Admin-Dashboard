@@ -31,6 +31,7 @@ background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, F
     border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
@@ -63,26 +64,20 @@ background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, F
 }
 
 .header {   
-    display: grid;
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 3 ;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-        "header-top header-top"
-        "header-bottom header-bottom";
-}
-
-.header-top {
-    grid-area: header-top;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 #search-bar {
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 1.5rem;
-    padding-right: 30rem;
+    padding-right: 25vw;
     border-radius: .5rem;
 }
 
@@ -118,10 +113,6 @@ background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, F
     border-radius: .3em;
 }
 
-
-.header-bottom {
-    grid-area: header-bottom;
-}
 
 .main-content {
     grid-column: 2 / 3;
